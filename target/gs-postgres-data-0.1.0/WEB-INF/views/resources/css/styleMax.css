@@ -1,0 +1,9 @@
+table .header{
+	text-align: right;
+	font: 25px/30px fantasy, "Helvetica CY", "Nimbus Sans L", sans-serif;
+//margin-bottom:  0px;
+	background : #000000;
+	color: #eeeeee;
+}
+
+

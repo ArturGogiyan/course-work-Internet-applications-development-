@@ -1,0 +1,54 @@
+<table cellspacing="17" cellpadding="20">
+    <tr>
+        <td class="header" colspan="3"  width="1400px" height="200px">
+            <p/><h2>Laboratory work №4. Try to get into the blue figure.</h2>
+            <p/><h3 class="descr">Completed: P3201 Gogiyan Arthur</h3>
+        </td>
+    </tr>
+    <tr>
+        <td id="menu" width="600px" height="350px">
+            <form onsubmit="return isOk();" method="GET">
+                <p/><h3>Choose value and click on button</h3>
+                <p/><label id="l_x">Choose coord <b>X</b> :   </label>
+                <button value="-2" onclick="save(-5)"> -5 </button><label>     </label>
+                 <button value="-1.5" onclick="save(-4)"> -4 </button><label>     </label>
+                <button value="-1" onclick="save(-3)"> -3 </button><label>     </label>
+                <button value="-0.5" onclick="save(-2)"> -2 </button><label>     </label>
+                <button value="0" onclick="save(-1)"> -1 </button><label>     </label>
+                <button value="0.5" onclick="save(0)"> 0 </button><label>     </label>
+                <button value="1" onclick="save(1)"> 1 </button><label>     </label>
+                <button value="1.5" onclick="save(2)"> 2 </button><label>     </label>
+                <button value="1.5" onclick="save(3)"> 3 </button>
+                <p><label id="l_y">Choose coord <b>Y</b> in the gap <b>(-5...5)</b> :   </label>
+                    <input type="text" id="Y" name="valueY" onblur="checkY()"/></p>
+                <p><label id="l_r">Choose coord <b>R</b> :   </label>
+                    <button value="-2" onclick="saveR(-5)"> -5 </button><label>     </label>
+                    <button value="-1.5" onclick="saveR(-4)"> -4 </button><label>     </label>
+                    <button value="-1" onclick="saveR(-3)"> -3 </button><label>     </label>
+                    <button value="-0.5" onclick="saveR(-2)"> -2 </button><label>     </label>
+                    <button value="0" onclick="saveR(-1)"> -1 </button><label>     </label>
+                    <button value="0.5" onclick="saveR(0)"> 0 </button><label>     </label>
+                    <button value="1" onclick="saveR(1)"> 1 </button><label>     </label>
+                    <button value="1.5" onclick="saveR(2)"> 2 </button><label>     </label>
+                    <button value="1.5" onclick="saveR(3)"> 3 </button>
+                </p>
+                <input type="hidden" name="valueX" id="Value_x"/>
+                <input type="hidden" name="valueR" id="Value_r"/>
+                <p><input type="button" class="check_button" value="Check" onclick="send(1)"/>
+                    <input type="reset" class="check_button" value="Reset" onclick="clean()"/>
+                </p>
+            </form>
+        </td>
+        <td id="image">
+            <canvas height='624' width='624' id="Img" onclick="defPosition(event)"></canvas>
+            <!--<h:graphicImage value="areas.png" width="0" height="0" id="coords"/>-->
+            <form action="#start">
+                <!--<input type="submit" class="check_button" value="to start page"/>-->
+                <input type="submit" class="check_button" value="to start page"/>
+            </form>
+        </td>
+    </tr>
+    <tr id="resultForm">
+    </tr>
+</table>
+
